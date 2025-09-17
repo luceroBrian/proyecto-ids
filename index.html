@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" /> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title> Inicio La Tua Festa </title>
+</head>
+<body >
+
+    <!-- ----- MENU DESPLEGABLE CELULAR ----- -->     
+    <div  id="navMenu"   class="list" ; >
+        <div class="boton">
+            <button type="button" width="100px" class="btn-close btn-close-white" aria-label="Close" onclick="Cerrar();" ></button>
+        </div>
+ 
+        <div class="navMenu" > 
+            <ul class=" bg-black">    
+                <li class="nav-link  "> 
+                    <a href="index.html">
+                        INICIO
+                    </a>
+                </li>
+           
+                <li class="nav-link  dropdown">
+                    <a class="nav-link active  text-light dropdown-toggle  "    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTOS
+                    </a>
+                    <ul class="dropdown-menu bg-light">
+                        <li class="nav-item bg-light  ">
+                            <a class="dropdown-item bg-white text-dark  " href="agenda.html"> 
+                                AGENDA
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="dropdown-item  bg-white text-dark" href="setJardin.html">
+                                SET DE JARDIN
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="dropdown-item bg-white text-dark" href="almohadones.html">
+                              ALMOHADONES
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="dropdown-item bg-white text-dark" href="cartuchera.html">
+                              CARTUCHERAS
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="dropdown-item bg-white text-dark" href="remChicos.html">
+                              REMERAS DE CHICOS
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="dropdown-item bg-white text-dark" href="remEmba.html">
+                              REMERAS DE EMBARAZADAS
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="dropdown-item bg-white text-dark" href="mochilas.html">
+                              MOCHILAS
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="dropdown-item bg-white text-dark" href="tazas.html">
+                              TAZAS
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="dropdown-item bg-white text-dark" href="tazaBolsi.html">
+                              BOLSITA
+                            </a>
+                        </li>
+                    </ul>
+                
+                </li>
+                <li  class="nav-link"  >
+                    <a href="devolucion.html">
+                        DEVOLUCIONES
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="nosotros.html">
+                        NOSOTROS             
+                    </a>  
+                </li>
+                <li class=" nav-link ">          
+                    <a href="servicios.html">
+                        SERVICIOS
+                    </a>
+                </li>  
+                <li class=" nav-link ">          
+                    <a href="polYpriv.html">
+                        POLITICA Y PRIVACIDAD
+                    </a>
+                </li>           
+            </ul>
+        </div>
+    </div>
+             
+    <!-- ----- DIV COMPLETO ----- --> 
+
+    <div class="fondoImg" id="divCompleto">
+
+        <!-- ----- WHATSAPP ----- -->        
+
+        <a href="https://api.whatsapp.com/send?phone=5491126388894&amp;text= Me intesesa este articulo..." title="Enviar mensaje directo Whatsapp" target="_blank" class="whatsappLink fixed-bottom  aWsp">
+                <img src="IMG/whatsapp.png" class="wsp  rounded float-end " alt="WhatsApp Chat  ">
+        </a>
+
+        <header>           
+
+            <!-- ----- LOGO NAVBAR ----- -->            
+            <div class="div_img   ">
+                <a href="#">
+                    <img src="IMG/logoNav.jpeg">
+                </a>   
+
+                <!--<a href="https://www.facebook.com/latuafestasublimacion" target="_blank">
+                    <img class="img" src="IMG/facebook.jpeg">
+                </a>
+                <a href="https://www.instagram.com/laadfs83/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                    <img class="img" src="IMG/instagram.jpeg">
+                </a>-->               
+                
+            </div>
+
+            <!-- ----- BOTON HAMBURGUESA ----- --> 
+            <nav id="menu"   class="navbar   boton_hbs " >            
+                <button class="navbar-toggler   menu " onclick="Mostrar();" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent " aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon  "></span>
+                </button>
+                
+            </nav>
+
+            <!-- ----- NAVEGADOR PORTATIL  ------ -->
+            <div class="portFon">
+                <nav class=" portatil navbar navbar-expand-lg bg-black w-100  justify-content-center mb-4 ">
+                    <div class="container-fluid  port  "> 
+
+                        <ul class="nav bg-black"> 
+
+                            <li class="nav-item loFondo">
+                                <a href="#" class="nav-link">
+                                    <img src="IMG/logoNav.jpeg">
+                                </a>  
+                            </li>
+                          
+                            <li class="nav-item">
+                                <a class="nav-link "       href="#">
+                                    <button  type="button" class="btn btn-outline-light">INICIO</button>
+                                </a>
+                            </li>
+                            <li class="nav-item   dropdown">
+                                <a class="nav-link active  text-light dropdown-toggle  "    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button  type="button"  class="btn btn-outline-light"  > PRODUCTO</button>
+                                </a>
+                                <ul class="dropdown-menu bg-dark">
+                                    <li class="nav-link   ">
+                                        <a class="dropdown-item    " href="agenda.html"> 
+                                            <button  type="button"  class="btn btn-outline-light  "> AGENDA</button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item  " href="setJardin.html">
+                                            <button  type="button" class="btn btn-outline-light"> SET DE JARDIN</button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="almohadones.html">
+                                            <button  type="button" class="btn btn-outline-light" > ALMOHADONES</button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="cartuchera.html">
+                                            <button  type="button" class="btn btn-outline-light" > CARTUCHERA</button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="remChicos.html">
+                                            <button  type="button" class="btn btn-outline-light" > REMERAS DE CHICOS</button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="remEmba.html">
+                                            <button  type="button" class="btn btn-outline-light" > REMERAS DE EMBARAZADAS</button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="mochilas.html">
+                                            <button  type="button" class="btn btn-outline-light" > MOCHILA</button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="tazas.html">
+                                            <button  type="button" class="btn btn-outline-light" > TAZA</button>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="tazaBolsi.html">
+                                            <button  type="button" class="btn btn-outline-light" > BOLSITA</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" href="devolucion.html">
+                                <button  type="button" class="btn btn-outline-light"   > DEVOLUCIONES</button>
+                            </a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" href="nosotros.html">
+                                <button  type="button" class="btn btn-outline-light" > NOSOTROS</button>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="pVenta">
+                <p>
+                   <b> PRODUCTOS DE VENTA FISICO </b>
+            </div>
+
+            <!-- ----- IMAGEN DE FONDO ----- --> 
+            <div class="header_img">
+                <img src="IMG/logo_mio_nuevo.png">
+            </div>            
+
+        </header>
+
+        <br> 
+        
+        <!-- ----- AGENDA ----- -->
+        <main class=" agendaS  container ">
+            <H1 class="encabezado agenda " >
+                <a href="agenda.html"> AGENDA </a>
+            </H1>      
+            <div class="card ">
+                <a href="agenda.html">
+                    <img src="IMG/AGENDA-1.png">                      
+                </a>
+            </div>            
+        </main>  
+
+        <br>   
+        
+        <!-- ----- SET DE JARDIN ----- -->
+        <main class="container_card  shadow-lg rounded">
+            <H1 class="encabezado setJardin " >
+                <a href="setJardin.html"> SET DE JARDIN </a>
+            </H1>  
+            <div class="section">            
+        
+                <div class="card ">
+                    <a href="#">
+                       <img src="IMG/A/ALMIRANTE_BROWN/almirante_brown_dulce_juana.jpg">
+                        <p class="parrafo">ALMIRANTE BROW
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/A/AMBULANCIA/ambulancia-dulce-juana.jpg">
+                        <p class="parrafo">AMBULANCIA
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/A/among_us/01.png">
+                        <p class="parrafo">  AMONG US
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/A/ABBY/ABBY-1-dulce-juana.jpg">
+                        <p class="parrafo">
+                            ABBY
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/A/abejita/abejita-1-301x301-dulce-juana.jpg">
+                        <p class="parrafo">ABEJITA
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/A/aladin/pack-jardin-aladdin_diserapalo.jpg">
+                        <p class="parrafo">
+                            ALADIN
+                        </p>                        
+                    </a>
+                </div>
+                
+                
+            </div>
+            <p class="verMas">
+                <a href="setJardin.html">ver más</a>
+            </p>
+            
+        </main>
+
+        <br>      
+
+        <!-- ----- ALMOHADONES ----- -->  
+        <main class="container_card shadow-lg  rounded">
+            <H1 class="encabezado almohadones " >
+                <a href="almohadones.html">ALMOHADONES</a>
+           </H1>  
+            <div class="section">            
+        
+                <div class="card">
+                    <a href="almoLol.html">
+                        <img src="IMG/ALMOHADONES-VARIOS/ALMOHADONES-LOL/Bon-Bon-Muestra.png">
+                        <p class="parrafo">LOL
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="almoRosa.html">
+                        <img src="IMG/ALMOHADONES-VARIOS/ALMOHADON-OCTUBRE-ROSA/a1.jpg">
+                        <p class="parrafo">ROSA
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="almoDiaNiño.html">
+                        <img src="IMG/ALMOHADONES-VARIOS/ALMOHADONES-DIA-DEL-NIÑO/MA1.png">
+                        <p class="parrafo"> DIA DEL NIÑO
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="almoPulpito.html">
+                        <img src="IMG/ALMOHADONES-VARIOS/ALMOHADONES-PULPITO/22.jpg">
+                        <p class="parrafo"> PULPITO
+                        </p> 
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="almoSemDulzu.html">
+                        <img src="IMG/almohadones/almohadones-con-bolsillo-semana-de-la-dulzura-(1).jpg">
+                        <p class="parrafo">SEMANA DE LA DULZURA
+                        </p>                        
+                    </a>
+                </div> 
+
+            </div>
+
+            <p class="verMas">
+                <a href="almohadones.html">ver más</a>
+            </p>
+            
+        </main>
+
+        <br>   
+        
+        <!-- ----- CARTUCHERAS ----- -->
+        <main class="container_card shadow-lg rounded">
+        <H1 class="encabezado cartuchera " >
+            <a href="cartuchera.html">CARTUCHERAS</a>
+        </H1>
+           <div class="section">            
+       
+               <div class="card">
+                <a href="#">
+                       <img src="IMG/CARTUCHERAS/BOCA-M.jpg">
+                       <p class="parrafo">BOCA
+                       </p>                        
+                   </a>
+               </div>
+
+               <div class="card ">
+                <a href="#">
+                       <img src="IMG/CARTUCHERAS/mgrey-anatomy.jpg">
+                       <p class="parrafo">MGREY ANATOMY
+                       </p>                        
+                   </a>
+               </div>
+
+               <div class="card">
+                <a href="#">
+                       <img src="IMG/CARTUCHERAS/naruto-1.jpg">
+                       <p class="parrafo"> NARUTO
+                       </p>                        
+                   </a>
+               </div>
+
+            </div>
+           
+        </main>
+ 
+        <br> 
+
+        <!-- ----- REMERAS DE CHICOS ----- --> 
+        <main class="container_card shadow-lg  rounded">
+            <H1 class="encabezado remChicos" >
+                <a href="remChicos.html">REMERAS DE CHICOS</a>
+            </H1>  
+            <div class="section">           
+        
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/remerasChicos/MR1.png">                       
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/remerasChicos/MR2.png">                  
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/remerasChicos/MR3.png">                        
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/remerasChicos/MR4.png"> 
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/remerasChicos/MR5.png">                        
+                    </a>
+                </div> 
+
+                <div class="card ">
+                    <a href="#">
+                            <img src="IMG/remerasChicos/MR6.png">                        
+                        </a>
+                    </div>
+
+            </div>
+
+            <p class="verMas">
+                <a href="remChicos.html">ver más</a>
+            </p>
+            
+        </main>
+
+        <br>
+        <br>
+
+        <!-- ----- REMERAS DE EMBARAZADA ----- --> 
+        <main class="container_card shadow-lg  rounded">
+            <H1 class="encabezado remEmbarazadas " >
+                <a href="remEmba.html">REMERAS DE EMBARAZADA</a>
+            </H1>  
+            <div class="section">            
+        
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/remeras_embarazadas/82656.jpg">                       
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/remeras_embarazadas/82657.jpg">                  
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/remeras_embarazadas/82658.jpg">                        
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/remeras_embarazadas/82659.jpg"> 
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/remeras_embarazadas/82660.jpg">                        
+                    </a>
+                </div> 
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/remeras_embarazadas/82661.jpg">                        
+                    </a>
+                </div> 
+            </div>
+            <p class="verMas">
+                <a href="remEmba.html">ver más</a>
+            </p>
+            
+        </main>
+
+        <br> 
+        <br>
+
+        <!-- ----- MOCHILAS ----- --> 
+        <main class="container_card shadow-lg  rounded">
+            <H1 class="encabezado mochilas " >
+                <a href="mochilas.html">MOCHILAS</a>
+                </H1> 
+            <div class="section">            
+        
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/mochilas_full_print/vampirina/vampirina.jpg">                     
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/mochilas_full_print/unicornios/unicornio-9-1-301x301.jpg">          
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/mochilas_full_print/tweety/tweety.jpg">                  
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/mochilas_full_print/tren-thomas/tren-thomas.jpg">
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/mochilas_full_print/transformers/transformers.jpg">                      
+                    </a>
+                </div> 
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/mochilas_full_print/toy-story/toy-story.jpg">                  
+                    </a>
+                </div> 
+            </div>
+            <p class="verMas">
+                <a href="mochilas.html">ver más</a>
+            </p>
+            
+        </main>
+
+        <br>
+        <br>
+
+        <!-- ----- TAZAS ----- --> 
+        <main class="container_card shadow-lg  rounded">
+            <H1 class="encabezado tazas " >
+                <a href="tazas.html">TAZAS</a>
+                </H1> 
+            <div class="section">            
+        
+                <div class="card">
+                    <a href="tazaSemDul.html">
+                        <img src="IMG/tazas/semana-de-la-dulsura/01.png">
+                        <p class="parrafo">SEMANA DE LA DULZURA
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="tazaCom.html">
+                        <img src="IMG/tazas/tazas-comunion-2/001.png">  
+                        <p class="parrafo">COMUNION
+                        </p>                 
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="tazaNiños.html">
+                        <img src="IMG/tazas/TAZAS-DIA-DE- NIÑO/M1.png">
+                        <p class="parrafo">DIA DEL NIÑO
+                        </p>                       
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="tazaPadre.html">
+                        <img src="IMG/tazas/tazas-dia-del-padre-2/Abuelo.png">
+                        <p class="parrafo">DIA DEL PADRE
+                        </p>  
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="tazaEgres.html">
+                        <img src="IMG/tazas/tazas-egresaditos/egresadito-super-heroe-pandemia.jpg">  
+                        <p class="parrafo">EGRESADITOS
+                        </p>                      
+                    </a>
+                </div>  
+            </div>
+
+            <p class="verMas">
+                <a href="tazas.html">ver más</a>
+            </p>
+            
+        </main>
+
+        <br>
+        <br>
+
+        <!-- ----- BOLSITAS ----- --> 
+        <main class="container_card shadow-lg  rounded">
+            <H1 class="encabezado tazas " >
+                <a href="tazaBolsi.html">BOLSITAS</a>
+                </H1> 
+            <div class="section">            
+        
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/tazas/taza-y-bolsita-diserapalo/1-(2).jpg">
+                        <p class="parrafo"> 
+                        </p>                        
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/tazas/taza-y-bolsita-diserapalo/11.jpg">  
+                        <p class="parrafo"> 
+                        </p>                 
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/tazas/taza-y-bolsita-diserapalo/13.jpg">  
+                        <p class="parrafo"> 
+                        </p>                       
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <img src="IMG/tazas/taza-y-bolsita-diserapalo/15.jpg">  
+                        <p class="parrafo"> 
+                        </p>  
+                    </a>
+                </div>
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/tazas/taza-y-bolsita-diserapalo/17.jpg">    
+                        <p class="parrafo"> 
+                        </p>                      
+                    </a>
+                </div> 
+
+                <div class="card ">
+                    <a href="#">
+                        <img src="IMG/tazas/taza-y-bolsita-diserapalo/19.jpg">  
+                        <p class="parrafo"> 
+                        </p>                       
+                    </a>
+                </div> 
+            </div>
+
+            <p class="verMas">
+                <a href="tazaBolsi.html">ver más</a>
+            </p>
+            
+        </main>
+
+        <br>
+
+        <!-- ----- FOOTER ----- -->
+        <footer>
+            <H1 class="encabezado">NUESTRAS REDES SOCIALES </h1>
+            <div class="redes_soc">
+                
+                <a href="https://www.facebook.com/latuafestasublimacion" target="_blank">
+                    <img src="IMG/facebook.jpeg">
+                </a>
+                <a href="https://www.instagram.com/laadfs83/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                    <img class="redes" src="IMG/instagram.jpeg">
+                </a>
+                <a href="https://www.tiktok.com/@luciana_1977" target="_blank"  >
+                    <img class="redes" src="IMG/tik-tok.jpeg">
+                </a>
+            </div>
+            <div class="contacto ">
+                <H1 class="encabezado ">CONTACTO </H1>
+                <div class="container">
+                    <p >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                        laadfs83@yahoo.com
+                    </p>
+                    <p >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            
+                        </svg>
+                        1126388894
+                    </p>
+                    <p >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                        Buenos Aires, Moreno.
+                    </p>
+                </div>
+                    
+            </div>
+            <div class="infoLinks">
+                <a href="devolucion.html">DEVOLUCIONES  </a>
+                <a href="nosotros.html"> NOSOTROS  </a>
+                <a href="servicios.html"> SERVICIOS  </a>
+                <a href="polYpriv.html"> POLITICA Y PRIVACIDAD  </a>
+                <a href="reco.html"> RECOMENDACIONES </a>
+            </div>
+            <div class="copyright"> LA TUA FESTA © | copyright </div>
+        </footer>  
+
+    </div>
+
+    <script src="js/index.js"></script>
+
+
+  
+</body>
+</html>
