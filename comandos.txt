@@ -1,0 +1,62 @@
+
+ 	~comandos globales:
+git init 
+git config --global user.name "su nombre"
+git config --global user.email "su email"
+git remote add origin URL
+git remote -v
+git remote set-url origin NUEVA_URL						
+
+
+    	~comando para subir
+git init
+git add .
+git commit -m "mensaje mio"
+git branch -M master
+git remote add origin URL
+git push -u origin master
+
+    	~comando para agregar:
+git status
+git add .
+git commit -m "mensaje mio"
+git push -u origin master
+
+
+
+	~comandos para traer:
+git pull
+git pull origin master
+
+
+	~comandos clonar branch :
+git clone URL
+
+
+	~comandos para cambiar nuevo branch:
+git branch
+git fetch
+git branch 
+git branch -r
+git checkout "nombre de la nueva rama"
+git log :muestra toda la informacion
+
+
+
+        ~comandos para agregar branch
+git branch
+git branch "entorno"
+git status
+git checkout "entorno"
+git checkout -b "entornos"
+
+
+
+
+-----
+
+
+i mergeo autorizado esc : wq
+git pull --allow-unrelated-origins
+
+
